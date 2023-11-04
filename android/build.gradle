@@ -23,4 +23,9 @@ dependencies {
     //noinspection GradleDynamicVersion
     implementation "com.facebook.react:react-native:${safeExtGet('reactNativeVersion', '+')}"
     implementation 'com.github.adityaxjha:Android-ScalableVideoView:10e7b4da8b'
+
+    implementation "androidx.annotation:annotation:1.7.0"
+    implementation "androidx.core:core:1.9.0"
+    implementation "androidx.media:media:1.6.0"
+    implementation "androidx.activity:activity:1.6.0"
 }
