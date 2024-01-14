@@ -5,8 +5,14 @@ def safeExtGet(prop, fallback) {
 }
 
 android {
+    namespace 'com.brentvatne.react'
     compileSdkVersion safeExtGet('compileSdkVersion', 28)
     buildToolsVersion safeExtGet('buildToolsVersion', '28.0.3')
+
+    compileOptions {
+        targetCompatibility JavaVersion.VERSION_11
+        sourceCompatibility JavaVersion.VERSION_11
+    }
 
     defaultConfig {
         minSdkVersion safeExtGet('minSdkVersion', 16)
